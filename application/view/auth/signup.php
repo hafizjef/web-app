@@ -1,32 +1,86 @@
 <body>
-<div class="panel-login">
-    <div class="container">
-        <form action="" method="">
-            <h1>Sign Up</h1>
-            <div class="form-input">
-                <label>Name</label>
-                <input type="text" name="name" id="name" maxlength="60" required>
-            </div>
-            <div class="form-input">
-                <label>Email Address</label>
-                <input type="email" name="email" id="email" maxlength="40" required>
-            </div>
-            <div class="form-input">
-                <label>Password</label>
-                <input type="password" name="password" id="password" maxlength="180" required>
-            </div>
-            <div class="form-input">
-                <label>Verify Password</label>
-                <input type="password" name="passwordverify" id="passwordverify" maxlength="180" required>
-            </div>
-            <div class="form-input">
-                <label>Address</label>
-                <textarea name="address" id="address" maxlength="180" required></textarea>
-            </div>
-            <div class="form-input">
-                <button class="button">Login</button>
-            </div>
-        </form>
+<div class="flex-grid">
+    <div class="col center">
+        <h1>REGISTER ACCOUNT</h1>
+        <div class="container">
+            <form id="signup-form" action="" method="post" onsubmit="return verifyBeforeSubmit()">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="name" maxlength="50" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="username">Username</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="username" maxlength="30" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" id="email" maxlength="50" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="phone">Phone</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="phone" maxlength="10" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="password" id="password" maxlength="80" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="verify-password">Verify Password</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="password" id="verify-password" maxlength="80" required>
+                    </div>
+                </div>
+                <div class="row remove-padding">
+                    <div class="col-25">
+                    </div>
+                    <div id="password-verify-status" class="col-75 password-verify">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="address">Address</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="address" maxlength="200" placeholder="Address line..." required></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="pull-right">
+                        <a href="<? URL; ?>login">I already have an account</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25 pull-right">
+                        <input type="reset" value="Reset">
+                        <input type="submit" value="Login">
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
 </body>
+<script type="application/javascript" src="<? echo URL; ?>js/signup.js"></script>

@@ -8,6 +8,124 @@ body {
     height: 100%;
 }
 
+h1 {
+    font-family: "Fjalla One", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.col-25 {
+    text-align: end;
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.password-verify {
+    text-align: left;
+    margin: 0;
+}
+
+.password-verify p {
+    margin: 0;
+}
+
+label {
+    padding: 12px 22px 12px 0;
+    display: inline-block;
+}
+
+input[type=text], input[type=password], input[type=email], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+input[type=submit] {
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 45%;
+}
+
+input[type=submit]:hover {
+    background-color: #47974d;
+}
+
+input[type=reset] {
+    font-weight: bold;
+    background-color: crimson;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    width: 45%;
+}
+
+input[type=reset]:hover {
+    background-color: #bb1439;
+}
+
+.row {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.row a {
+    text-decoration: none;
+}
+
+.row a:visited {
+    color: blue;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.remove-padding {
+    padding: 0;
+}
+
+.success {
+    color: #4CAF50;
+}
+
+.error {
+    color: #bb1238;
+}
+
+.pull-right {
+    float: right;
+}
+
 #menu-toggle {
     display: none;
 }
@@ -92,7 +210,7 @@ li a:hover {
     text-align: center;
 }
 
-.center h1 {
+.center .promo-text {
     font-family: 'Monoton', sans-serif;
     margin: 0;
 }
@@ -123,6 +241,23 @@ li a:hover {
     ul.navigation li {
         float: none;
     }
+    .boxed {
+        font-size: 3.5vw;
+    }
+    .container {
+        max-width: 90%;
+    }
+    .col-25, .col-75 {
+        text-align: center;
+        width: 100%;
+    }
+    input[type=submit], input[type=reset] {
+        margin: 0 0 10px 0;
+        width: 100%;
+    }
+    label {
+        padding: 0;
+    }
     ul.navigation {
         overflow: hidden;
         max-height: 0;
@@ -132,7 +267,7 @@ li a:hover {
     }
     .menu-toggle {
         display: block;
-        position: sticky;
+        position: static;
     }
     #menu-toggle:checked + ul.navigation {
         max-height: 1000px;

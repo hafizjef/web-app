@@ -1,7 +1,7 @@
 <body>
 <div class="flex-grid panel-promo">
     <div class="col center">
-        <h1>WOW Laundry</h1>
+        <h1 class="promo-text">WOW Laundry</h1>
         <p class="boxed">Washing On Wheels; Your ultimate laundry solution</p>
     </div>
 </div>
