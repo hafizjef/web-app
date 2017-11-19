@@ -1,0 +1,205 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+ul.navigation {
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.navigation li {
+    float: left;
+}
+
+ul.navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.navigation li.right {
+    float: right;
+}
+
+.panel-promo {
+    background-color: aqua;
+    height: 30%;
+    width: 100%;
+    position: relative;
+}
+
+.promo-text {
+    top: 30%;
+    position: relative;
+}
+
+.promo-text h1, p {
+    margin: 0;
+    text-align: center;
+}
+
+.explain-content {
+    text-align: center;
+}
+
+.content-box {
+    display: flex;
+    justify-content: center;
+}
+
+.box-item {
+    padding: 0 10px 0 10px;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.box-item h1 {
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.order-bg {
+    background: url(../img/place-orders.jpg) no-repeat top center;
+    width: 100%;
+    height: 114px;
+    padding-top: 50px;
+}
+
+.pickup-bg {
+    background: url(../img/pickup-bg.jpg) no-repeat top center;
+    width: 100%;
+    height: 114px;
+    padding-top: 50px;
+}
+
+.wash-bg {
+    background: url(../img/wash-bg.jpg) no-repeat top center;
+    width: 100%;
+    height: 114px;
+    padding-top: 50px;
+}
+
+.deliver-bg {
+    background: url(../img/delivery-bg.jpg) no-repeat top center;
+    width: 100%;
+    height: 114px;
+    padding-top: 50px;
+}
+
+.panel-login {
+    text-align: center;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-input {
+    padding: 10px;
+    margin: 10px;
+    clear: both;
+}
+
+.form-link {
+    padding: 20px 0 0 0;
+}
+
+label{
+    margin-right: 20px;
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 250px;
+    text-align: right;
+}
+input {
+    display: inline-block;
+    float: left;
+}
+
+textarea {
+    display: block;
+    float: left;
+    padding-bottom: 10px;
+}
+
+.about p {
+    margin: 40px;
+    text-align: justify;
+}
+
+.about h1 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.active {
+    background: crimson;
+}
+
+li a:hover {
+    background: #bb1238;
+}
+
+.center {
+    margin: auto;
+    text-align: center;
+}
+
+.center h1 {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.flex-grid {
+    display: flex;
+}
+
+.flex-grid .col {
+    flex: 1;
+}
+
+.flex-grid-thirds {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-grid-thirds .col {
+    width: 32%;
+}
+
+/* Media query section
+*
+*/
+
+@media screen and (max-width: 600px) {
+    ul.navigation li.right,
+    .pull-right,
+    ul.navigation li {
+        float: none;}
+    .content-box {
+        flex-direction: column;
+    }
+    .box-item {
+        padding: 20px;
+    }
+    .wash-bg,
+    .deliver-bg,
+    .pickup-bg,
+    .order-bg {
+        display: none;
+    }
+}
