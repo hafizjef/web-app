@@ -2,16 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f93ebce9-2e3e-4890-9f9f-edb9f16b25d3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/signup.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/application.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controller/home.php" afterPath="$PROJECT_DIR$/application/controller/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/core/controller.php" afterPath="$PROJECT_DIR$/application/core/controller.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/view/_templates/footer.php" afterPath="$PROJECT_DIR$/application/view/_templates/footer.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/view/auth/login.php" afterPath="$PROJECT_DIR$/application/view/auth/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/view/auth/signup.php" afterPath="$PROJECT_DIR$/application/view/auth/signup.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/view/home/indexflex.php" afterPath="$PROJECT_DIR$/application/view/home/indexflex.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/style.css" afterPath="$PROJECT_DIR$/public/css/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="852">
-              <caret line="269" column="24" lean-forward="true" selection-start-line="269" selection-start-column="24" selection-end-line="269" selection-end-column="25" />
+            <state relative-caret-position="121">
+              <caret line="241" column="20" lean-forward="true" selection-start-line="241" selection-start-column="20" selection-end-line="241" selection-end-column="20" />
               <folding>
                 <element signature="e#2552#3789#1" expanded="true" />
               </folding>
@@ -107,7 +97,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signup.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="signup.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/view/auth/signup.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="458">
@@ -164,10 +154,10 @@
         <option value="$PROJECT_DIR$/application/view/home/indexflex.php" />
         <option value="$PROJECT_DIR$/application/core/controller.php" />
         <option value="$PROJECT_DIR$/application/view/auth/login.php" />
-        <option value="$PROJECT_DIR$/public/css/style.css" />
         <option value="$PROJECT_DIR$/public/js/application.js" />
         <option value="$PROJECT_DIR$/application/view/_templates/footer.php" />
         <option value="$PROJECT_DIR$/application/view/auth/signup.php" />
+        <option value="$PROJECT_DIR$/public/css/style.css" />
       </list>
     </option>
   </component>
@@ -178,7 +168,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="width" value="683" />
     <option name="height" value="738" />
   </component>
@@ -325,15 +315,15 @@
       <workItem from="1510675918985" duration="7348000" />
       <workItem from="1511079593569" duration="228000" />
       <workItem from="1511079848138" duration="14966000" />
-      <workItem from="1511104572399" duration="16815000" />
+      <workItem from="1511104572399" duration="17960000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42317000" />
+    <option name="totallyTimeSpent" value="43462000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17642753" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -658,16 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="852">
-          <caret line="269" column="24" lean-forward="true" selection-start-line="269" selection-start-column="24" selection-end-line="269" selection-end-column="25" />
-          <folding>
-            <element signature="e#2552#3789#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/signup.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -689,6 +669,16 @@
         <state relative-caret-position="458">
           <caret line="82" column="10" lean-forward="true" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="241" column="20" lean-forward="true" selection-start-line="241" selection-start-column="20" selection-end-line="241" selection-end-column="20" />
+          <folding>
+            <element signature="e#2552#3789#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
