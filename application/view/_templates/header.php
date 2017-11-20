@@ -30,7 +30,8 @@
 ?>
 
 <!-- navigation -->
-<label class="menu-toggle" for="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i><p>WOW Laundry</p>
+<label class="menu-toggle" for="menu-toggle">
+       <div style="padding-top: 6px"> <i class="fa fa-bars" aria-hidden="true"></i><p>WOW Laundry</p></div>
 </label><input type="checkbox" id="menu-toggle"/>
 <ul class="navigation">
     <li><a class="<?php active('');?>" href="<? echo URL; ?>">Home</a></li>

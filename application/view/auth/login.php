@@ -1,6 +1,6 @@
 <body>
 <div class="flex-grid">
-    <div class="col center">
+    <div class="col centerh">
         <h1>USER LOGIN</h1>
         <div class="container">
             <form action="" method="post">
@@ -9,7 +9,7 @@
                         <label for="username">Username</label>
                     </div>
                     <div class="col-75">
-                        <input type="text" id="username" required>
+                        <input type="text" id="username" placeholder="Login Username" maxlength="30" minlength="3" pattern="([a-zA-Z])\w+" title="Alphabet, number and underscores only" required>
                     </div>
                 </div>
                 <div class="row">
@@ -17,7 +17,7 @@
                         <label for="password">Password</label>
                     </div>
                     <div class="col-75">
-                        <input type="password" id="password" required>
+                        <input type="password" id="password" placeholder="Login Password" minlength="8" maxlength="80" required>
                     </div>
                 </div>
                 <div class="row">
@@ -31,7 +31,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-25 pull-right">
+                    <div class="col-25 pull-right btn-container">
                         <input type="reset" value="Reset">
                         <input type="submit" value="Login">
                     </div>

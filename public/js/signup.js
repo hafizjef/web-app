@@ -18,14 +18,14 @@ function verifyPassword(){
         status.removeChild(status.firstChild);
     }
 
-    if (password.value === vpassword.value) {
+    if (password.value.length != 0 && password.value === vpassword.value) {
         var success = document.createElement("p");
         success.setAttribute("class", "success");
         success.appendChild(document.createTextNode("Password matched!"));
         status.appendChild(success);
         return true;
 
-    } else if (password.value.length != 0 && password.value != vpassword.value) {
+    } else if (password.value.length != 0 && vpassword.value.length != 0 && password.value != vpassword.value) {
         var success = document.createElement("p");
         success.setAttribute("class", "error");
         success.appendChild(document.createTextNode("Password mismatched!"));

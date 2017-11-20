@@ -24,6 +24,26 @@ h1 {
     margin: 0 auto;
 }
 
+.btn-container {
+    display: flex;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.no-padding {
+    padding: 0;
+    margin: 0;
+}
+
+.well {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px;
+}
+
 .col-25 {
     text-align: end;
     float: left;
@@ -205,6 +225,10 @@ li a:hover {
     background: #bb1238;
 }
 
+.centerh {
+    text-align: center;
+}
+
 .center {
     margin: auto;
     text-align: center;
@@ -220,7 +244,13 @@ li a:hover {
 }
 
 .flex-grid .col {
+    padding: 0 10px 0 10px;
     flex: 1;
+}
+
+.flex-grid .col h2 {
+    font-family: "Fjalla One", sans-serif;
+    text-transform: uppercase;
 }
 
 .flex-grid-thirds {
@@ -230,6 +260,38 @@ li a:hover {
 .flex-grid-thirds .col {
     width: 32%;
 }
+
+/*
+ * How It Work BG
+ */
+.order-bg {
+    background: url(../img/place-orders.jpg) no-repeat top center;
+    width: 100%;
+    height: 164px;
+    padding-top: 50px;
+}
+
+.pickup-bg {
+    background: url(../img/pickup-bg.jpg) no-repeat top center;
+    width: 100%;
+    height: 164px;
+    padding-top: 50px;
+}
+
+.wash-bg {
+    background: url(../img/wash-bg.jpg) no-repeat top center;
+    width: 100%;
+    height: 164px;
+    padding-top: 50px;
+}
+
+.deliver-bg {
+    background: url(../img/delivery-bg.jpg) no-repeat top center;
+    width: 100%;
+    height: 164px;
+    padding-top: 50px;
+}
+
 
 /* Media query section
 *
@@ -242,10 +304,13 @@ li a:hover {
         float: none;
     }
     .boxed {
-        font-size: 3.5vw;
+        font-size: 1.6vh;
     }
     .container {
-        max-width: 90%;
+        max-width: 80%;
+    }
+    .btn-container {
+        flex-direction: column-reverse;
     }
     .col-25, .col-75 {
         text-align: center;
@@ -266,10 +331,25 @@ li a:hover {
         -webkit-transition: all 0.6s ease;
     }
     .menu-toggle {
+        min-height: 50px;
         display: block;
         position: static;
     }
     #menu-toggle:checked + ul.navigation {
         max-height: 1000px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu-toggle {
+        min-height: 50px;
+        display: block;
+        position: static;
+    }
+    .container {
+        max-width: 98%;
+    }
+    .flex-grid {
+        display: grid;
     }
 }
