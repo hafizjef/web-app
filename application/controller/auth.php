@@ -1,7 +1,4 @@
 <?php
-
-require_once APP . 'core/redirect.php';
-
 class Auth extends Controller
 {
     public function index()

@@ -1,0 +1,17 @@
+{
+    "name": "hafizjef/WOWLaundry",
+    "description": "WOWLaundry - Barebones PHP webapps",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hafiz Jefri",
+            "email": "dev@hafizjef.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+		"psr-4": {"": "application/core"}
+    }
+}
