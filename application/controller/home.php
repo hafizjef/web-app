@@ -9,7 +9,6 @@ class Home extends Controller
     public function index()
     {
         // load views
-        require APP . 'view/_templates/header.php';
         require APP . 'view/home/indexflex.php';
         require APP . 'view/_templates/footer.php';
     }
@@ -17,7 +16,6 @@ class Home extends Controller
     public function about()
     {
         // load views
-        require APP . 'view/_templates/header.php';
         require APP . 'view/home/about.php';
         require APP . 'view/_templates/footer.php';
     }
@@ -25,7 +23,6 @@ class Home extends Controller
     public function contact()
     {
         // load views
-        require APP . 'view/_templates/header.php';
         //require APP . 'view/home/example_two.php';
         require APP . 'view/_templates/footer.php';
     }

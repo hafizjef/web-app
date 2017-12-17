@@ -1,3 +1,6 @@
-<div class="container">
-    <p>This is the Error-page. Will be shown when a page (= controller / method) does not exist.</p>
+<div class="main-container">
+    <div class="centerboth">
+        <h1>404; Resource Not Found</h1>
+        <p>Thats all we know, sorry :(</p>
+    </div>
 </div>

@@ -3,6 +3,7 @@
 </div>
 
 <!-- our JavaScript -->
-<script type="application/javascript"></script>
+<script type="application/javascript">
+</script>
 </body>
 </html>

@@ -7,7 +7,7 @@ class Helper
      * @param array $parameters
      * @return string
      */
-    static public function debugPDO($raw_sql, $parameters) {
+    public static function debugPDO($raw_sql, $parameters) {
         $keys = array();
         $values = $parameters;
         foreach ($parameters as $key => $value) {
@@ -37,5 +37,13 @@ class Helper
 
         $raw_sql = preg_replace($keys, $values, $raw_sql, 1, $count);
         return $raw_sql;
+    }
+
+    public static function active($current_page){
+        $url_array =  explode('/', $_SERVER['REQUEST_URI']) ;
+        $url = end($url_array);
+        if($current_page == $url){
+            echo 'active'; //class name in css
+        }
     }
 }

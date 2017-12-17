@@ -9,7 +9,7 @@
                         <label for="username">Username</label>
                     </div>
                     <div class="col-75">
-                        <input type="text" id="username" placeholder="Login Username" maxlength="30" minlength="3" pattern="([a-zA-Z])\w+" title="Alphabet, number and underscores only" required>
+                        <input name="username" type="text" id="username" placeholder="Login Username" maxlength="30" minlength="3" pattern="([a-zA-Z])\w+" title="Alphabet, number and underscores only" required autofocus>
                     </div>
                 </div>
                 <div class="row">
@@ -17,7 +17,7 @@
                         <label for="password">Password</label>
                     </div>
                     <div class="col-75">
-                        <input type="password" id="password" placeholder="Login Password" minlength="8" maxlength="80" required>
+                        <input name="password" type="password" id="password" placeholder="Login Password" maxlength="80" required>
                     </div>
                 </div>
                 <div class="row">

@@ -12,6 +12,6 @@
     "minimum-stability": "dev",
     "require": {},
     "autoload": {
-		"psr-4": {"": "application/core"}
+		"psr-4": {"": ["application/core", "application/model", "application/libs"]}
     }
 }

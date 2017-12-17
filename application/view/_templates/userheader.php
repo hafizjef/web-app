@@ -24,8 +24,12 @@
        <div style="padding-top: 6px"> <i class="fa fa-bars" aria-hidden="true"></i><p>WOW Laundry</p></div>
 </label><input type="checkbox" id="menu-toggle"/>
 <ul class="navigation">
-    <li><a class="<?php Helper::active('');?>" href="<? echo URL; ?>">Home</a></li>
-    <li><a class="<?php Helper::active('about');?>" href="<? echo URL; ?>home/about">About</a></li>
-    <li><a class="<?php Helper::active('contact');?>" href="<? echo URL; ?>home/contact">Contacts</a></li>
-    <li class="right"><a class="<?php Helper::active('login');?>" href="<? echo URL; ?>auth/login">Login</a></li>
+    <li><a class="<?php Helper::active('listorder');?>" href="<? echo URL; ?>client/listorder">Order List</a></li>
+    <li><a class="<?php Helper::active('addorder');?>" href="<? echo URL; ?>client/addorder">Add Order</a></li>
+    <div class="pull-right">
+        <li><a class="<?php Helper::active('profile');?>" href="<? echo URL; ?>client/profile"><?php echo "Welcome, " . Session::get('user')->username; ?></a></li>
+        <li><a class="<?php Helper::active('logout');?>" href="<? echo URL; ?>auth/logout">Logout</a></li>
+    </div>
+
+
 </ul>
