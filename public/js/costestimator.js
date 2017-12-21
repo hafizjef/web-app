@@ -10,6 +10,18 @@ function calculate(){
     if (document.getElementById("iron").checked){
         totalcost += 4;
     }
+    if (document.getElementById("shirt").checked){
+        totalcost += 5;
+    }
+    if (document.getElementById("jeans").checked){
+        totalcost += 7;
+    }
+    if (document.getElementById("suit").checked){
+        totalcost += 7;
+    }
+    if (document.getElementById("bedsheet").checked){
+        totalcost += 4;
+    }
 
     document.getElementById("cost").value = totalcost * weight;
 }

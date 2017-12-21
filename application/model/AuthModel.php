@@ -16,7 +16,7 @@ class AuthModel
      */
     public static function login($username, $password){
 
-        $sql = "SELECT * FROM customer WHERE username = :username LIMIT 1";
+        $sql = "SELECT * FROM customer WHERE username = :username AND active = 'Y' LIMIT 1";
         $params = array(':username' => $username);
 
         $user = DatabaseWorker::query($sql, $params);

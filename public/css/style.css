@@ -91,6 +91,20 @@ input[type=submit] {
     width: 45%;
 }
 
+button {
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    padding: 6px 6px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.delete {
+    background-color: crimson;
+}
+
 input[type=submit]:hover {
     background-color: #47974d;
 }

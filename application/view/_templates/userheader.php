@@ -1,3 +1,10 @@
+<?php
+    if(!Session::userIsLoggedIn()){
+        Redirect::home();
+    } elseif(Session::staffIsLoggedIn()){
+        Redirect::to('admin');
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

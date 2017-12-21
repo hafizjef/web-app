@@ -1,3 +1,10 @@
+<?php
+    if(!Session::staffIsLoggedIn()){
+        Redirect::home();
+    } elseif (Session::userIsLoggedIn()){
+        Redirect::profile();
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

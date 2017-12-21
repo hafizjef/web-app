@@ -10,6 +10,12 @@ class Request
         }
     }
 
+    public static function postArray($key){
+        if(isset($_POST[$key])){
+            return $_POST[$key];
+        }
+    }
+
     public static function isPost(){
         return ($_SERVER['REQUEST_METHOD'] === 'POST');
     }
@@ -26,7 +32,7 @@ class Request
      */
     public static function postCheckbox($key)
     {
-        return isset($_POST[$key]) ? 1 : NULL;
+        return isset($_POST[$key]) ? 1 : 0;
     }
 
     public static function get($key)

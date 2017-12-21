@@ -32,6 +32,10 @@ class Redirect
         header("location: " . URL . 'client/profile');
     }
 
+    public static function admin(){
+        header("location: " . URL . 'admin');
+    }
+
     public static function to($path)
     {
         header("location: " . URL . $path);

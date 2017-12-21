@@ -1,3 +1,10 @@
+<?php
+    if(Session::userIsLoggedIn()){
+        Redirect::profile();
+    } elseif (Session::staffIsLoggedIn()){
+        Redirect::admin();
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,6 +33,5 @@
 <ul class="navigation">
     <li><a class="<?php Helper::active('');?>" href="<? echo URL; ?>">Home</a></li>
     <li><a class="<?php Helper::active('about');?>" href="<? echo URL; ?>home/about">About</a></li>
-    <li><a class="<?php Helper::active('contact');?>" href="<? echo URL; ?>home/contact">Contacts</a></li>
     <li class="right"><a class="<?php Helper::active('login');?>" href="<? echo URL; ?>auth/login">Login</a></li>
 </ul>

@@ -9,12 +9,5 @@ class Controller
         }
 
         Session::init();
-        if (Session::userIsLoggedIn()) {
-            require APP . 'view/_templates/userheader.php';
-        } elseif (Session::staffIsLoggedIn()) {
-            require APP . 'view/_templates/staffheader.php';
-        } else {
-            require APP . 'view/_templates/header.php';
-        }
     }
 }

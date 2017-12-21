@@ -33,7 +33,7 @@ class DatabaseWorker
             $query->execute($clause);
         }
 
-        return $query->fetch();
+        return $query->fetchAll();
     }
 
     public static function mutate($sql, $value){

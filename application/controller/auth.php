@@ -17,7 +17,7 @@ class Auth extends Controller
                     $alert = Alert::success("Password reset requested, please check your email");
                     break;
             }
-
+            require APP . 'view/_templates/header.php';
             require APP . 'view/_templates/message.php';
             require APP . 'view/auth/login.php';
             require APP . 'view/_templates/footer.php';
@@ -36,18 +36,20 @@ class Auth extends Controller
                     if (Session::staffIsLoggedIn()){
                         Redirect::to('admin');
                     } else {
-                        Redirect::to('client/profile');
+                        Redirect::to('client');
                     }
                     return;
 
                 } catch (Exception $ex) {
                     $alert = Alert::danger("Authentication problem: " . $ex->getMessage());
+                    require APP . 'view/_templates/header.php';
                     require APP . 'view/_templates/message.php';
                     require APP . 'view/auth/login.php';
                     require APP . 'view/_templates/footer.php';
                     return;
                 }
             } else {
+                require APP . 'view/_templates/header.php';
                 require APP . 'view/auth/login.php';
                 require APP . 'view/_templates/footer.php';
                 return;
@@ -74,6 +76,7 @@ class Auth extends Controller
                     Redirect::to('auth/login?action=new');
                 } catch (Exception $ex){
                     $alert = Alert::danger("Registration error: " . $ex->getMessage());
+                    require APP . 'view/_templates/header.php';
                     require APP . 'view/_templates/message.php';
                     require APP . 'view/auth/signup.php';
                     require APP . 'view/_templates/footer.php';
@@ -81,6 +84,7 @@ class Auth extends Controller
                 }
 
             }
+            require APP . 'view/_templates/header.php';
             require APP . 'view/auth/signup.php';
             require APP . 'view/_templates/footer.php';
             return;
@@ -95,12 +99,14 @@ class Auth extends Controller
                 Redirect::to('auth/login?action=reset');
             } catch (Exception $exception) {
                 $alert = Alert::danger("Request error: " . $exception->getMessage());
+                require APP . 'view/_templates/header.php';
                 require APP . 'view/_templates/message.php';
                 require APP . 'view/auth/forgotpass.php';
                 require APP . 'view/_templates/footer.php';
                 return;
             }
         }
+        require APP . 'view/_templates/header.php';
         require APP . 'view/auth/forgotpass.php';
         require APP . 'view/_templates/footer.php';
         return;
