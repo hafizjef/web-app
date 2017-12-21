@@ -18,44 +18,46 @@ USE `laundrydb`;
 
 -- Dumping structure for table laundrydb.booking
 CREATE TABLE IF NOT EXISTS `booking` (
-  `booking_id` int(11) NOT NULL,
-  `customer_id` int(11) NOT NULL,
-  `staff_id` int(11) NOT NULL,
-  `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `weight` tinyint(3) NOT NULL,
-  `total` tinyint(3) NOT NULL,
-  `status` tinyint(2) NOT NULL DEFAULT '0',
-  `service_type` tinyint(2) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`booking_id`),
-  KEY `FK__users` (`customer_id`),
-  KEY `FK_booking_staff` (`staff_id`),
-  CONSTRAINT `FK__users` FOREIGN KEY (`customer_id`) REFERENCES `customer` (`userid`),
-  CONSTRAINT `FK_booking_staff` FOREIGN KEY (`staff_id`) REFERENCES `staff` (`staff_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=ascii;
+  `orderid` int(11) NOT NULL AUTO_INCREMENT,
+  `customerid` int(11) NOT NULL,
+  `date` date NOT NULL,
+  `weight` double NOT NULL,
+  `totalprice` double NOT NULL,
+  `services` text NOT NULL,
+  `items` text NOT NULL,
+  `status` enum('N','P','C') NOT NULL DEFAULT 'N',
+  PRIMARY KEY (`orderid`),
+  KEY `FK__users` (`customerid`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=ascii;
 
 -- Data exporting was unselected.
 -- Dumping structure for table laundrydb.customer
 CREATE TABLE IF NOT EXISTS `customer` (
-  `userid` int(11) NOT NULL,
-  `usertype` tinyint(2) NOT NULL DEFAULT '0',
+  `userid` int(11) NOT NULL AUTO_INCREMENT,
+  `active` enum('Y','N') NOT NULL DEFAULT 'Y',
+  `name` varchar(50) NOT NULL,
   `username` varchar(60) NOT NULL,
-  `emailaddress` varchar(60) NOT NULL,
+  `email` varchar(60) NOT NULL,
   `phonenumber` char(10) NOT NULL,
   `password` char(255) NOT NULL,
   `address` varchar(300) NOT NULL,
-  PRIMARY KEY (`userid`)
-) ENGINE=InnoDB DEFAULT CHARSET=ascii;
+  `token` char(32) NOT NULL,
+  PRIMARY KEY (`userid`),
+  UNIQUE KEY `username` (`username`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=ascii;
 
 -- Data exporting was unselected.
 -- Dumping structure for table laundrydb.staff
 CREATE TABLE IF NOT EXISTS `staff` (
-  `staff_id` int(11) NOT NULL,
+  `userid` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) NOT NULL,
   `name` varchar(50) NOT NULL,
   `phonenumber` char(10) NOT NULL,
   `email` varchar(50) NOT NULL,
   `password` char(255) NOT NULL,
-  PRIMARY KEY (`staff_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=ascii;
+  PRIMARY KEY (`userid`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=ascii;
 
 -- Data exporting was unselected.
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
